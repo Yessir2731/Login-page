@@ -11,7 +11,7 @@ require 'Login.php';
     <title>Login Page</title>
 </head>
 <body>
-<div class="title">login page with multilevel</div>
+<div class="title">Authentication with multilevel</div>
 <div class="switch"><a href="signUpPage.php">Sign Up</a></div>
     
 <div class="form-container"> 

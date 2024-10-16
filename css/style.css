@@ -114,6 +114,17 @@
 
 }
 
+.card{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card p{
+    border: 1px solid var(--darkgreen);
+    padding: 30px 100px;
+}
+
 /* Profile Section */
 .profile-menu {
     position: relative;
@@ -136,41 +147,6 @@
 .username {
     font-size: 1.2rem;
     color: var(--darkgreen);
-}
-
-/* Dropdown Menu */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: black;
-    color: var(--darkgreen);
-    border: 1px solid var(--darkgreen);
-    border-radius: 4px;
-    width: 150px;
-    z-index: 1000;
-}
-
-.dropdown-menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.dropdown-menu ul li {
-    padding: 10px;
-    text-align: left;
-}
-
-.dropdown-menu ul li a {
-    text-decoration: none;
-    color: var(--darkgreen);
-}
-
-.dropdown-menu ul li:hover {
-    background-color: var(--darkgreen);
-    color: black;
 }
 
 /* Display dropdown on click */

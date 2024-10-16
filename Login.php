@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
         // Start the session
         session_start();
 
-        if ($role == 0) {
+        if ($role == 1) {
             // If the user is an admin
             $_SESSION['log'] = 'logged';
             $_SESSION['role'] = 'admin';
@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
             header('Location: ./user/user.php');
         }
     } else {
-        echo "Invalid username or password";
+        echo " Invalid username or password";
     }
 }
 ?>
