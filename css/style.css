@@ -3,9 +3,16 @@
     padding: 0;
     background-color: black;
     color: var(--darkgreen);
-    font-family: 'Pixeled';
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+:root
+{
+    --green: #6c7d41;
+    --darkgreen: #09541d;
+    --gray: #9da194;
+    --blue: #1d1f2e;
+}
 
 .switch{
     display: flex;
@@ -30,8 +37,8 @@
 }
 
 
-
 /* NAVBAR */
+
 .navbar{
     display: flex;  
     justify-content: space-between;
@@ -71,6 +78,8 @@
     background-color: #333;
 }
 
+/* Toggler-button */
+
 .toggler-button{
     position: absolute;
     top: 1rem;
@@ -81,7 +90,6 @@
     width: 30px;
     height: 21px;
 }
-
 
 .toggler-button .bar{
     height: 3px;
@@ -126,6 +134,7 @@
 }
 
 /* Profile Section */
+
 .profile-menu {
     position: relative;
     margin-right: 1rem;
@@ -149,11 +158,6 @@
     color: var(--darkgreen);
 }
 
-/* Display dropdown on click */
-.profile-menu.active .dropdown-menu {
-    display: block;
-}
-
 /* Responsive adjustments for profile menu */
 @media (max-width: 500px) {
     .profile-menu {
@@ -164,10 +168,6 @@
 
 /* PRODUCT */
 
-
-
-
-
 .form-container{
     display: flex;
     justify-content: center;
@@ -175,19 +175,6 @@
     height: 80vh;
     background-color: black;
     color: var(--darkgreen);
-}
-
-@font-face {
-    font-family: 'Pixeled';
-    src: url('font/Pixeled.ttf') format('ttf');
-}
-
-:root
-{
-    --green: #6c7d41;
-    --darkgreen: #09541d;
-    --gray: #9da194;
-    --blue: #1d1f2e;
 }
 
 .logo
@@ -223,7 +210,6 @@ input{
     margin: 10px auto;
     background-color: var(--darkgreen);
     border: 2px solid var(--darkgreen);
-    font-family: 'Pixeled';
     font-size: 13px;
     color: black;
 }
@@ -247,7 +233,6 @@ input:focus
     float:  right;
     padding: 10px 30px;
     margin-top: 15px;
-    font-family: 'Pixeled';
     font-size: 13px;
     color: var(--darkgreen);
     border: none;
