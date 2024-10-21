@@ -19,25 +19,25 @@ if (!isset($_SESSION['log']) || $_SESSION['role'] !== 'admin') {
     <script defer type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-   <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo-user">FAST</div>
-        <a href="#" class="toggler-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-link">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-            </ul>
-        </div>
-    </nav>
+   <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>admin panel</h2>
+        <ul>
+            <li><a href="#dashboard">dashboard</a></li>
+            <li><a href="#users">Users</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#orders">Orders</a></li>
+            <li><a href="#settings">Settings</a></li>
+            <li><a href="#logout">Logout</a></li>
+        </ul>
+    </div>
+   
     <!-- content -->
+    <div class="content">
+        <h2>dashboard</h2>
         <div class="card">
             <p>your logged in.. on admin side</p>
         </div>
+    </div>
 </body>
 </html>
