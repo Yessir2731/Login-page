@@ -1,3 +1,13 @@
+<?php
+session_start(); // Ensure session is started
+
+// Check if the user is logged in and has user role
+if (!isset($_SESSION['log']) || $_SESSION['role'] !== 'user') {
+    header('Location: ../loginPage.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
